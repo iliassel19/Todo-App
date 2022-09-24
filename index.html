@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link href="./style.css" rel="stylesheet" />
+
+    <script src="./app.js" defer></script>
+    <title>Frontend Mentor | Todo app</title>
+  </head>
+  <body>
+    <img
+      src="./images/bg-desktop-light.jpg"
+      alt="Background representing a mountain."
+      class="top-bg_image top-bg-image_desk top-bg_image-show"
+    />
+    <img
+      src="./images/bg-desktop-dark.jpg"
+      alt="Background representing a mountain."
+      class="top-bg_image top-bg-image_desk"
+    />
+    <img
+      src="./images/bg-mobile-light.jpg"
+      alt="Background representing a mountain."
+      class="top-bg_image top-bg-image_mobile top-bg_image-show"
+    />
+    <img
+      src="./images/bg-mobile-dark.jpg"
+      alt="Background representing a mountain."
+      class="top-bg_image top-bg-image_mobile"
+    />
+
+    <main class="main">
+      <div class="main-header">
+        <h1>Todo</h1>
+
+        <button class="btn theme-btn">
+          <img src="./images/icon-moon.svg" alt="Moon icon" />
+          <img
+            src="./images/icon-sun.svg"
+            alt="Moon icon"
+            class="icon-unshow"
+          />
+        </button>
+      </div>
+      <form action="#" class="form">
+        <div class="form-group">
+          <button class="btn cercle" type="submit"></button>
+          <input
+            type="text"
+            placeholder="Create a new todo..."
+            class="form__input"
+          />
+        </div>
+      </form>
+
+      <div class="todos-container">
+        <ul class="todos-list">
+          <li class="todo-item todo-empty">
+            <h2 class="todo-empty_text">You have no Todos.</h2>
+          </li>
+        </ul>
+
+        <div class="todos-ctas">
+          <p class="items-left"></p>
+          <ul class="ctas-list ctas-list-desk">
+            <li>
+              <button class="btn cta">All</button>
+            </li>
+            <li>
+              <button class="btn cta">Active</button>
+            </li>
+            <li>
+              <button class="btn cta">Completed</button>
+            </li>
+          </ul>
+          <button class="btn clear">Clear completed</button>
+        </div>
+      </div>
+      <div class="ctas-mob">
+        <ul class="ctas-list">
+          <li>
+            <button class="btn cta">All</button>
+          </li>
+          <li>
+            <button class="btn cta">Active</button>
+          </li>
+          <li>
+            <button class="btn cta">Completed</button>
+          </li>
+        </ul>
+      </div>
+    </main>
+  </body>
+</html>
