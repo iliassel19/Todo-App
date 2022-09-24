@@ -234,7 +234,7 @@ html {
   animation: unshow 0.4s forwards;
 }
 .ctas-list-desk {
-  display: block;
+  display: flex;
 }
 .ctas-mob {
   display: none;
